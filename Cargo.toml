@@ -1,0 +1,10 @@
+[package]
+name = "humidity-monitor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yew = { version = "0.21", features = ["csr"] }
+# Cleaned up web-sys to only include what is necessary for the dashboard
+web-sys = { version = "0.3", features = ["Window"] }
+wasm-bindgen = "0.2"
